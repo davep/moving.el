@@ -14,6 +14,7 @@
 
 ;;; Code:
 
+;;;###autoload
 (defun moving-to-next-repeated-word ()
   "Find the the next repeated word."
   (interactive)
