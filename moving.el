@@ -6,13 +6,13 @@
   (require 'cl))
 
 ;;;###autoload
-(defun next-repeated-word ()
+(defun moving-to-next-repeated-word ()
   "Find the the next repeated word."
   (interactive)
   (search-forward-regexp "\\(\\<\\w+\\>\\)\\(\\s-\\|\t\\|\n\\)+\\<\\1\\>"))
 
 ;;;###autoload
-(defun smart-home ()
+(defun moving-home ()
   "Move `point' towards \"home\" depending on context."
   (interactive)
   (cond ((bolp)
@@ -23,7 +23,7 @@
          (back-to-indentation))))
 
 ;;;###autoload
-(defun smart-end ()
+(defun moving-end ()
   "Move `point' towards \"end\" depending on context."
   (interactive)
   (cond ((eolp)
