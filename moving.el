@@ -7,6 +7,13 @@
 ;; URL: https://github.com/davep/moving.el
 
 ;;;###autoload
+
+;;; Commentary:
+;;
+;; moving.el provides some extra commands for moving around a buffer.
+
+;;; Code:
+
 (defun moving-to-next-repeated-word ()
   "Find the the next repeated word."
   (interactive)
@@ -36,4 +43,4 @@
 
 (provide 'moving)
 
-;; moving.el ends here
+;;; moving.el ends here
