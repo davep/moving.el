@@ -2,9 +2,6 @@
 ;; By Dave Pearson <davep@davep.org>
 ;; $Revision: 1.1 $
 
-(eval-when-compile
-  (require 'cl))
-
 ;;;###autoload
 (defun moving-to-next-repeated-word ()
   "Find the the next repeated word."
