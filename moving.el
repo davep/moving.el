@@ -1,6 +1,10 @@
 ;;; moving.el --- Extra commands for moving about a buffer.
-;; By Dave Pearson <davep@davep.org>
-;; $Revision: 1.1 $
+;; Copyright 2000-2017 by Dave Pearson <davep@davep.org>
+
+;; Author: Dave Pearson <davep@davep.org>
+;; Version: 1.1
+;; Keywords: convenience
+;; URL: https://github.com/davep/moving.el
 
 ;;;###autoload
 (defun moving-to-next-repeated-word ()
