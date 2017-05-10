@@ -6,8 +6,6 @@
 ;; Keywords: convenience
 ;; URL: https://github.com/davep/moving.el
 
-;;;###autoload
-
 ;;; Commentary:
 ;;
 ;; moving.el provides some extra commands for moving around a buffer.
