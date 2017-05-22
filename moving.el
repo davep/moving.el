@@ -40,6 +40,20 @@
         (t
          (end-of-line))))
 
+;;;###autoload
+(defun moving-backward-page (&optional count)
+  "Call `backward-page' with COUNT then move to start of line."
+  (interactive "p")
+  (backward-page count)
+  (beginning-of-line))
+
+;;;###autoload
+(defun moving-forward-page (&optional count)
+  "Call `forward-page' with COUNT them move to start of line."
+  (interactive "p")
+  (forward-page count)
+  (beginning-of-line))
+
 (provide 'moving)
 
 ;;; moving.el ends here
