@@ -1,8 +1,8 @@
 ;;; moving.el --- Extra commands for moving about a buffer  -*- lexical-binding: t; -*-
-;; Copyright 2000-2017 by Dave Pearson <davep@davep.org>
+;; Copyright 2000-2026 by Dave Pearson <davep@davep.org>
 
 ;; Author: Dave Pearson <davep@davep.org>
-;; Version: 1.3
+;; Version: 1.4
 ;; Keywords: convenience
 ;; URL: https://github.com/davep/moving.el
 ;; Package-Requires: ((emacs "24.1"))
