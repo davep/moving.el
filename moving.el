@@ -1,4 +1,4 @@
-;;; moving.el --- Extra commands for moving about a buffer.
+;;; moving.el --- Extra commands for moving about a buffer
 ;; Copyright 2000-2017 by Dave Pearson <davep@davep.org>
 
 ;; Author: Dave Pearson <davep@davep.org>
