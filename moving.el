@@ -63,7 +63,7 @@
 
 ;;;###autoload
 (defun moving-forward-page (&optional count)
-  "Call `forward-page' with COUNT them move to start of line."
+  "Call `forward-page' with COUNT then move to start of line."
   (interactive "p")
   (forward-page count)
   (beginning-of-line))
