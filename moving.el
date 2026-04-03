@@ -1,10 +1,11 @@
-;;; moving.el --- Extra commands for moving about a buffer.
-;; Copyright 2000-2017 by Dave Pearson <davep@davep.org>
+;;; moving.el --- Extra commands for moving about a buffer  -*- lexical-binding: t; -*-
+;; Copyright 2000-2026 by Dave Pearson <davep@davep.org>
 
 ;; Author: Dave Pearson <davep@davep.org>
-;; Version: 1.3
+;; Version: 1.4
 ;; Keywords: convenience
 ;; URL: https://github.com/davep/moving.el
+;; Package-Requires: ((emacs "24.1"))
 
 ;; This program is free software: you can redistribute it and/or modify it
 ;; under the terms of the GNU General Public License as published by the
@@ -36,7 +37,7 @@
   "Move `point' towards \"home\" depending on context."
   (interactive)
   (cond ((bolp)
-         (setf (point) (point-min)))
+         (goto-char (point-min)))
         ((<= (point) (save-excursion (back-to-indentation) (point)))
          (beginning-of-line))
         (t
@@ -47,7 +48,7 @@
   "Move `point' towards \"end\" depending on context."
   (interactive)
   (cond ((eolp)
-         (setf (point) (point-max)))
+         (goto-char (point-max)))
         ((< (point) (save-excursion (back-to-indentation) (point)))
          (back-to-indentation))
         (t
@@ -62,7 +63,7 @@
 
 ;;;###autoload
 (defun moving-forward-page (&optional count)
-  "Call `forward-page' with COUNT them move to start of line."
+  "Call `forward-page' with COUNT then move to start of line."
   (interactive "p")
   (forward-page count)
   (beginning-of-line))
