@@ -36,7 +36,7 @@
   "Move `point' towards \"home\" depending on context."
   (interactive)
   (cond ((bolp)
-         (setf (point) (point-min)))
+         (goto-char (point-min)))
         ((<= (point) (save-excursion (back-to-indentation) (point)))
          (beginning-of-line))
         (t
@@ -47,7 +47,7 @@
   "Move `point' towards \"end\" depending on context."
   (interactive)
   (cond ((eolp)
-         (setf (point) (point-max)))
+         (goto-char (point-max)))
         ((< (point) (save-excursion (back-to-indentation) (point)))
          (back-to-indentation))
         (t
